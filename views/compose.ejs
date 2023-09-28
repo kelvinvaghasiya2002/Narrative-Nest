@@ -1,0 +1,15 @@
+<%- include('partials/header'); -%>
+
+    <h1 style="padding-left: 20px; margin-top: 170px;">Generate</h1>
+    <form style="padding: 0 20px;" action="/compose" method="post">
+        <div class="form-group">
+            <label for="Title">Title</label>
+            <textarea name="sTitle" class="form-control" id="Title" rows="1"></textarea>
+            <p class="postBody""><%=postBody%></p>
+        </div>
+        <button type="submit" class="btn btn-primary" name="button" value="search">Search</button>
+        <input type="submit" class="btn btn-primary" name="button" value="submit">
+    </form>
+
+
+<%- include('partials/footer'); -%>
